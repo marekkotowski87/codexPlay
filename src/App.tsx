@@ -1,6 +1,15 @@
-import { AppBar, Toolbar, Typography, Button, CssBaseline, Box } from '@mui/material'
+import { AppBar, Toolbar, Typography, Button, CssBaseline } from '@mui/material'
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  CssBaseline,
+} from '@mui/material'
+import BottomNav from './components/BottomNav'
 
 function App() {
+
   return (
     <>
       <CssBaseline />
@@ -12,11 +21,7 @@ function App() {
           <Button color="inherit">Log in</Button>
         </Toolbar>
       </AppBar>
-      <Box sx={{ display: 'flex', justifyContent: 'space-evenly', mt: 2 }}>
-        <Button variant="contained">One</Button>
-        <Button variant="contained">Two</Button>
-        <Button variant="contained">Three</Button>
-      </Box>
+      <BottomNav />
     </>
   )
 }
