@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type SyntheticEvent } from 'react'
 import {
   BottomNavigation,
   BottomNavigationAction,
@@ -16,7 +16,7 @@ function BottomNav() {
       <BottomNavigation
         showLabels
         value={value}
-        onChange={(_event, newValue) => setValue(newValue)}
+        onChange={(_event: SyntheticEvent, newValue: number) => setValue(newValue)}
       >
         <BottomNavigationAction label="Home" icon={<HomeIcon />} />
         <BottomNavigationAction label="Explore" icon={<ExploreIcon />} />
